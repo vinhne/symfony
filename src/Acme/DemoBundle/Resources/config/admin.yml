@@ -1,0 +1,12 @@
+# Acme/DemoBundle/Resources/config/admin.yml
+services:
+    sonata.admin.Categogy:
+        class: Acme\SaleBundle\Admin\CategogyAdmin
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: "Content", label: "Categogy" }
+        arguments:
+            - ~
+            - Acme\SaleBundle\Entity\Categogy
+            - ~
+        calls:
+            - [ setTranslationDomain, [AcmeSaleBundle]]
