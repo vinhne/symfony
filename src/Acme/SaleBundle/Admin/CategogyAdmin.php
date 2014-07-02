@@ -18,7 +18,12 @@ class CategogyAdmin extends Admin
     {
 	
 	
-	
+
+
+
+
+
+
 	/*
       $formMapper
             ->add('name')
@@ -36,16 +41,21 @@ class CategogyAdmin extends Admin
 		
 		
 		
+	//	 $query = $this->modelManager->getEntityManager()->createQuery('SELECT s FROM Acme\SaleBundle\Entity\categogy s');
+
+		
+		
 		
 		
 		
 		$formMapper->add('name')	
-					
+			->add('image')			
+			->add('parent_id','entity',array('class'=>'Acme\SaleBundle\Entity\Categogy'))	
 			->add('status', 'choice', array(
 				'choices' => array('0' => 'Hiện', '1' => 'Ẩn'),
 				'preferred_choices' => array('0'),
 			))
-			
+			->add('converUrl')
 			;
 
 
