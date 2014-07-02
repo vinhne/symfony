@@ -30,6 +30,7 @@ class CategogyAdmin extends Admin
 					'choices' => array('m' => 'Male', 'f' => 'Female')
 			));
 			
+		*/
 		
 		
 		
@@ -78,19 +79,6 @@ class CategogyAdmin extends Admin
 					
 					*/
 
-
-	
-	$formMapper
-	->add('category', 'entity', array(
-        'class'    => 'Acme\SaleBundle\Entity\category',
-));		
-						
-					
-					
-					
-					
-					
-					
 
     }
 
