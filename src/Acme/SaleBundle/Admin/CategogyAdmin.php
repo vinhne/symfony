@@ -9,7 +9,7 @@ use Sonata\AdminBundle\Datagrid\DatagridMapper;
 use Sonata\AdminBundle\Form\FormMapper;
 use Acme\SaleBundle\Entity\CategogyRepository;
 
-
+use Sonata\AdminBundle\Datagrid\ORM\ProxyQuery;
 
 class CategogyAdmin extends Admin
 {
@@ -44,8 +44,7 @@ class CategogyAdmin extends Admin
 	//	 $query = $this->modelManager->getEntityManager()->createQuery('SELECT s FROM Acme\SaleBundle\Entity\categogy s');
 
 		
-		
-		
+	
 		
 		
 		$formMapper->add('name')	
